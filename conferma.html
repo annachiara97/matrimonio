@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferma la tua presenza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/home_icon.png">
+</head>
+
+<body>
+    <div class="container">
+    <div class="navbar">
+        <img src="images/home_icon.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                 <li> <a href="index.html">Home</a></li>
+                <li> <a class="active" href="conferma.html">Conferma la tua presenza</a></li>
+                <li> <a href="cibo.html">Food & Co</a></li>
+                <li> <a href="sogno.html">La nostra favola</a></li>
+                <li> <a href="geolocalizzaci.html">Geolocalizzaci</a></li>
+                <li> <a href="#">Contattaci</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.svg" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+
+<div class="description">
+    <h2>Conferma la tua presenza</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut lectus iaculis, pharetra nisi a, bibendum tortor. Suspendisse blandit, nulla in sodales auctor, lacus ex tincidunt odio, ut condimentum leo lorem eget nisi. Nunc porttitor dui eu arcu ultrices, ac faucibus lorem aliquet. Morbi gravida augue est, sit amet suscipit turpis dignissim sed. </p>
+</div>
+
+<div class="form_conferma">
+
+    <form action ="" id="confirmForm">
+        <div class="alert">Le tue risposte sono state inviate correttamente!</div>
+
+        <!-- Details -->
+    
+        <div class="form-control" style="margin-top: 60px;">
+            <label for="comment">
+                Nome e Cognome
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <div class="inputBox">
+                <textarea id="msgContent4" cols="30" rows="10" placeholder="Inserisci la tua risposta"></textarea>
+            </div>
+
+
+  <div class="form-control" style="margin-top: 30px;";>
+            <label>
+               Sarai dei nostri? 
+            </label>
+            <div class="inputBox">
+                <textarea id="msgContent5" cols="10" rows="10" placeholder="Inserisci la tua risposta"></textarea>
+            </div>
+            
+                 
+        <div class="form-control" style="margin-top: 30px;">
+            <label for="comment">
+                Se sì, in quanti sarete? 
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <div class="inputBox">
+                <textarea id="msgContent6" cols="30" rows="10" placeholder="Inserisci la tua risposta"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Invia le tue risposte</button>
+            </div>
+    </form>
+
+</div>
+    </div>
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+            if( menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "190px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="form2.js"></script>
+
+</body>
+</html>

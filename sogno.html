@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuele e Claudia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/home_icon.png">
+</head>
+
+<body>
+    <div class="container">
+    <div class="navbar">
+        <img src="images/home_icon.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                 <li> <a href="index.html">Home</a></li>
+                <li> <a href="conferma.html">Conferma la tua presenza</a></li>
+                <li> <a href="cibo.html">Food & Co</a></li>
+                <li> <a class="active" href="sogno.html">La nostra favola</a></li>
+                <li> <a href="geolocalizzaci.html">Geolocalizzaci</a></li>
+                <li> <a href="#">Contattaci</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.svg" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    
+
+<div class="description">
+<h2>La nostra favola</h2>
+<p>Qui inizia la nostra favola, grazie a te che vorrai contribuire aiutandoci a realizzarla nel modo migliore (nel modo più bello possibile). </p>
+</div>
+
+
+
+    <div class="row_images">
+        <div class="im-1">
+            <img src="images/auto.jpg">
+        </div>
+
+        <div class="im-1">
+            <img src="images/aereo.jpg">
+        </div>
+
+        <div class="im-1">
+            <img src="images/mare.jpg">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+        <p>Emanuele e Claudia</p>
+        <p>22 luglio 2022</p>
+        <p>Condividi</p>
+    </div>
+    <div class="firma">
+        <img src="images/copy.png" class="copy"><p> Annachiara Izzi</p>
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+            
+            function togglemenu(){
+                if( menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "190px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+
+        </script>
+
+
+<script src="main.js"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

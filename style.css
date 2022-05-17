@@ -1,0 +1,544 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(font/Nunito-VariableFont_wght.ttf);
+    src: local('Nunito'), url(font/Nunito-VariableFont_wght.ttf), format('truetype');
+}
+
+@font-face {
+    font-family: 'Clicker';
+    src: url(font/ClickerScript-Regular.ttf);
+    src: local('Clicker'), url(font/ClickerScript-Regular.ttf), format('truetype');
+}
+
+@font-face {
+    font-family: 'Vensfolk';
+    src: url(font/Vensfolk.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #C78300;
+    --secondary: #353C63; 
+    --dark: #141938;
+    --light: #F0DFBE;
+  }
+
+body{
+    height: 100%;
+    background-image: url("images/sfondo.png");
+
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: 20px;
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Vensfolk;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+.active{
+    color: orange;
+}
+
+
+h3{
+    font-size: 28px;
+    color: whitesmoke;
+    font-family: Clicker;
+}
+
+/* CARD */
+
+
+  
+  .card {
+    margin: 100px auto 0;
+    width: 90%;
+    height: 450px;
+    perspective: 1000px;
+  }
+  
+  .card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card__inner.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card__face--front h2 {
+    color: #FFF;
+    font-size: 60px;
+  }
+  
+  .card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+  }
+  
+  .card__content {
+    width: 100%;
+    height: 100%;
+  }
+    
+  .pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto -20px;
+    object-fit: cover;
+  }
+  
+  .card__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card__body {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .card__body h3 {
+    color: var(--dark);
+    font-size: 29px;
+    margin-top: 10px;
+  }
+  
+  .card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+
+
+
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+    font-family: Clicker;
+    color: whitesmoke;
+}
+
+.col-1 h3{
+    font-size: 30px;
+    font-family: Clicker;
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    font-size: 18px;
+    font-family: Nunito;
+    margin: 30px 0;
+    color: whitesmoke;
+    line-height: 160%;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .coppia{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.footer p{
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: vensfolk;
+    color: whitesmoke;
+}
+
+
+.footer .copy{
+    width: 10px;
+}
+
+.footer .firma{
+    display: flex;
+column-gap: 0px;
+align-items: baseline;
+margin-bottom: 20px;
+}
+
+.firma p{
+    font-size: 8px;
+
+}
+
+
+
+h2{
+    font-size: 54px;
+    font-family: Clicker;
+    color: whitesmoke;
+}
+
+p{
+    font-size: 18px;
+    font-family: Nunito;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+
+.description{
+    background-color: #C78300;
+    border-radius: 5%;
+    padding: 40px;
+}
+
+.row_images{
+    display: flex;
+    column-gap: 5px;
+}
+
+.im-1{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+/* FOOD FORM WEB DESKTOP */
+
+
+
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: rgba(255, 198, 87, 0.5);
+max-width: 700px;
+margin: 50px auto;
+padding: 40px 70px;
+box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+border-radius: 31px;
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            font-family: Nunito;
+            font-weight: 100;
+            font-size: 20px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+border-radius: 2px;
+font-family: inherit;
+padding: 10px;
+display: block;
+width: 95%;
+height: 30px;
+border-radius: 10px;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #1D244E;
+            border: 1px solid #777;
+            border-radius: 4px;
+            font-family: Nunito;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        .alert{
+            width: 100%;
+            background: green;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 100;
+            display: none;
+            font-family: Nunito;
+            color: white
+            ;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+
+    nav ul{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 2;
+        background-color: darkblue;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 7px;
+        
+    }
+
+    nav ul li a{
+        color: aqua;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        display: none ;
+    }
+
+    .col-2 .coppia{
+        width: 50%;
+    }
+
+.col-1{
+    flex-basis: 50%;
+}
+
+.col-1 h2{
+    font-size: 30px;
+
+}
+
+.col-1 h3{
+    font-size: 20px;
+}
+
+.col-1 p{
+    font-size: 16px;
+}
+
+.logo{
+    width: 60px;
+}
+
+.footer{
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 5px;
+}
+
+
+/* FOOD FORM MOBILE */
+
+
+.description h2{
+    font-size: 30px;
+}
+
+.description p{
+    font-size: 12px;
+}
+
+
+
+
+.form-control {
+    text-align: left;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Nunito;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
