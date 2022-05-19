@@ -102,6 +102,13 @@ h3{
     font-family: Clicker;
 }
 
+
+
+.col-3 img{
+    max-width: 400px;
+}
+
+
 /* CARD */
 
 
@@ -148,6 +155,7 @@ h3{
   .card__face--front h2 {
     color: #FFF;
     font-size: 60px;
+    text-align: center;
   }
   
   .card__face--back {
@@ -208,7 +216,7 @@ h3{
 .col-1{
     flex-basis: 40%;
     position: relative;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .col-1 h2{
@@ -270,6 +278,15 @@ margin-bottom: 20px;
 }
 
 
+.col-3{
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 h2{
     font-size: 54px;
@@ -287,19 +304,28 @@ p{
 
 .description{
     background-color: #C78300;
-    border-radius: 5%;
+    border-radius: 20px;
     padding: 40px;
 }
 
-.row_images{
+
+.gallery{
     display: flex;
-    column-gap: 5px;
+    margin-top: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
-.im-1{
+.gallery img{
     width: 100%;
-    flex: 1 1 100%;
+    height: auto;
+flex-basis: 30%;
 }
+
+
+  
 
 /* FOOD FORM WEB DESKTOP */
 
@@ -430,7 +456,8 @@ border-radius: 10px;
         top: 80px;
         right: 0;
         z-index: 2;
-        background-color: darkblue;
+        background-color: #F0DFBE;
+        
     }
 
     nav ul li{
@@ -440,7 +467,7 @@ border-radius: 10px;
     }
 
     nav ul li a{
-        color: aqua;
+        color: #353C63;
     }
 
     .menu-icon{
@@ -466,6 +493,13 @@ border-radius: 10px;
     .col-2 .coppia{
         width: 50%;
     }
+
+.col-3 {
+    width: 50%;
+align-items: center;
+}
+
+
 
 .col-1{
     flex-basis: 50%;
@@ -506,6 +540,22 @@ border-radius: 10px;
     font-size: 12px;
 }
 
+.col-3 img{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.gallery{
+    /* display: flex; */
+}
+
+
+
+.gallery img{
+    flex-basis: 46%;
+    display: flex;
+    column-gap: 0px;
+}
 
 
 
@@ -522,6 +572,33 @@ border-radius: 10px;
     font-weight: 100;
     font-size: 16px;
 }
+
+
+
+.col-1 h2{
+    font-size: 30px;
+    font-family: Clicker;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.col-1 h3{
+    font-size: 20px;
+    font-family: Clicker;
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 5px auto;
+}
+
+.col-1 p{
+    font-size: 13px;
+    font-family: Nunito;
+    margin: 15px auto;
+    color: whitesmoke;
+    line-height: 160%;
+}
+
+
 
 
 
