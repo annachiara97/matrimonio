@@ -23,8 +23,9 @@ function submitForm(e) {
     var msgContent4 = getElementVal('msgContent4');
     var msgContent5 = getElementVal('msgContent5');
     var msgContent6 = getElementVal('msgContent6');
+    var presenza = document.querySelector("input[name='presenza']:checked").value;
 
-    saveMessages(msgContent4, msgContent5, msgContent6);
+    saveMessages(msgContent4, msgContent6, presenza);
 
 // enable allert
 document.querySelector('.alert').style.display = "block";
