@@ -27,7 +27,9 @@
 
 <div class="description">
     <h2>Food & Co</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut lectus iaculis, pharetra nisi a, bibendum tortor. Suspendisse blandit, nulla in sodales auctor, lacus ex tincidunt odio, ut condimentum leo lorem eget nisi. Nunc porttitor dui eu arcu ultrices, ac faucibus lorem aliquet. Morbi gravida augue est, sit amet suscipit turpis dignissim sed. </p>
+    <p>Compila il form in basso per effettuare dei cambiamenti per il tuo menu in caso di eventuali esigenze, allerigie o intolleranze.</p>
+    <p>Ricorda di inserire il nome e cognome di ogni partecipante per identificare meglio le tue richieste</p>
+<p>Se non hai nulla da segnalare non è necessario compilare il form.</p>
 </div>
 
 
@@ -42,7 +44,7 @@
         
             <div class="form-control" style="margin-top: 60px;">
                 <label for="comment">
-                    Nome
+                    Nome e Cognome*
                 </label>
      
                 <!-- multi-line text input control -->
@@ -53,7 +55,7 @@
 
       <div class="form-control" style="margin-top: 30px;";>
                 <label>
-                    Il menu sarà a base di pesce. Gradisci un'alternativa a base di carne o vegetariano?
+                    Il menu sarà a base di pesce. Gradisci un'alternativa a base di carne o vegetariano?*
                 </label>
                 <div class="inputBox">
                     <textarea id="msgContent2" cols="10" rows="10" placeholder="Inserisci la tua risposta"></textarea>
@@ -62,7 +64,7 @@
                      
             <div class="form-control" style="margin-top: 30px;">
                 <label for="comment">
-                    Hai intolleranze e/o allergie da segnalarci?
+                    Hai intolleranze e/o allergie da segnalarci?*
                 </label>
      
                 <!-- multi-line text input control -->
@@ -89,7 +91,7 @@
         function togglemenu(){
             if( menuList.style.maxHeight == "0px")
             {
-                menuList.style.maxHeight = "190px"
+                menuList.style.maxHeight = "200px"
             }
             else
             {

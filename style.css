@@ -62,7 +62,7 @@ body{
 }
 
 .menu-icon{
-    width: 25px;
+    width: 40px;
     cursor: pointer;
     display: none;
 }
@@ -214,7 +214,7 @@ h3{
 }
 
 .col-1{
-    flex-basis: 40%;
+    flex-basis: 50%;
     position: relative;
     /* margin-left: 50px; */
 }
@@ -545,11 +545,14 @@ align-items: center;
     margin-bottom: 20px;
 }
 
-.gallery{
-    /* display: flex; */
+.card__body h3{
+font-size: 21px;
+
 }
 
-
+.card__body p{
+font-size: 13px;
+}
 
 .gallery img{
     flex-basis: 46%;
