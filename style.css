@@ -42,6 +42,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
 
 .container{
     width: 100%;
@@ -154,6 +161,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   
   .card__face--front h2 {
@@ -417,9 +425,24 @@ border-radius: 10px;
 
 
 
+.cta{
+    background-color: #C78300;
+    width: auto;
+    padding: 10px 30px 10px 30px;
+border: none;
+display: flex;
+justify-content: center;
+}
 
-
-
+.cta a{
+    text-decoration: none;
+    color: #F0DFBE;
+}
+/*
+.card__content_phone{
+    display: none;
+}
+*/
 
 
 
@@ -460,7 +483,8 @@ border-radius: 10px;
         top: 80px;
         right: 0;
         z-index: 2;
-        background-color: #F0DFBE;
+        background-color: #f0dfbe;
+        
         
     }
 
@@ -605,9 +629,21 @@ font-size: 13px;
     line-height: 160%;
 }
 
+.card__content_phone{
+    display: block;
+    background-color: var(--light);
+    border-radius: 8px;
+}
+
+.card{
+    display: none;
+}
 
 
+#menuList{
+    padding-right: 10px;
 
+}
 
 
 
