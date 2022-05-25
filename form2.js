@@ -21,7 +21,6 @@ function submitForm(e) {
     e.preventDefault();
 
     var msgContent4 = getElementVal('msgContent4');
-    var msgContent5 = getElementVal('msgContent5');
     var msgContent6 = getElementVal('msgContent6');
     var presenza = document.querySelector("input[name='presenza']:checked").value;
 
@@ -43,13 +42,13 @@ document.getElementById("confirmForm").reset();
 }
 
 
-const saveMessages = (msgContent4, msgContent5, msgContent6) => {
+const saveMessages = (msgContent4, msgContent6, presenza) => {
     var newconfirmForm = confirmFormDB.push();
 
     newconfirmForm.set({
         msgContent4 : msgContent4,
-        msgContent5 : msgContent5,
-        msgContent6 : msgContent6,
+       msgContent6 : msgContent6,
+        presenza : presenza,
     }
     )
 }

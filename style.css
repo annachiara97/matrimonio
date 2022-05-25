@@ -54,6 +54,11 @@ body{
     align-items: center;
 }
 
+.flex-direction-col{
+    flex-direction: column;
+}
+
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -346,6 +351,14 @@ flex-basis: 30%;
 }
 
 
+
+.contattaci{
+    display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+
   
 
 /* FOOD FORM WEB DESKTOP */
@@ -405,17 +418,23 @@ border-radius: 10px;
         /* Styling Button */
         button {
             background-color: #1D244E;
-            border: 1px solid #777;
-            border-radius: 4px;
+           border: none;
+            border-radius: 5px;
             font-family: Nunito;
             font-size: 18px;
             display: block;
             width: auto;
             padding: 10px 30px 10px 30px;
-            color: white;
+            color: whitesmoke;
             cursor: pointer;
             margin-top: 30px;
         }
+
+button:hover{
+    color: #1D244E;
+    background: #FEEAD3;
+}
+
 
 
         .submitBox{
@@ -447,6 +466,20 @@ border: none;
 display: flex;
 justify-content: center;
 }
+
+
+.cta:hover{
+    background: #FEEAD3;
+    color: #C78300;
+}
+
+
+.cta a:hover{
+    background: #FEEAD3;
+color: #C78300;
+}
+
+
 
 .cta a{
     text-decoration: none;
@@ -659,6 +692,18 @@ font-size: 13px;
 
 }
 
+
+
+
+.contattaci{
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.cla{
+    margin-top: 20px;
+}
 
 
 }
