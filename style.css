@@ -465,6 +465,8 @@ button:hover{
 border: none;
 display: flex;
 justify-content: center;
+letter-spacing: 0.1em;
+
 }
 
 
