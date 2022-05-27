@@ -410,6 +410,7 @@ p {
     width: 100%;
     height: auto;
     flex-basis: 30%;
+    max-width: 30%;
 }
 
 
