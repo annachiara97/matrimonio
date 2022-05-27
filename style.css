@@ -615,7 +615,7 @@ button:hover {
         top: 80px;
         right: 0;
         z-index: 2;
-        background-color: #f0dfbe;
+        background-color: #353C63;
 
 
     }
@@ -627,7 +627,7 @@ button:hover {
     }
 
     nav ul li a {
-        color: #353C63;
+        color: #f0dfbe;
     }
 
     .menu-icon {
@@ -718,6 +718,7 @@ button:hover {
         flex-basis: 100%;
         display: flex;
         column-gap: 0px;
+        max-width: 100%;
     }
 
 
