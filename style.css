@@ -19,104 +19,107 @@
     src: url(font/Vensfolk.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 :root {
     --primary: #C78300;
-    --secondary: #353C63; 
+    --secondary: #353C63;
     --dark: #141938;
     --light: #F0DFBE;
-  }
+}
 
-body{
+body {
     height: 100%;
     background-image: url("images/sfondo.png");
 
     height: 100%;
-  
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
 
-.flex-direction-col{
+.flex-direction-col {
     flex-direction: column;
 }
 
 
-.container{
+
+
+.container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
     margin-top: 18px;
 }
 
-.logo{
+.logo {
     width: 50px;
     cursor: pointer;
     margin: 30px 0;
 }
 
-.menu-icon{
+.menu-icon {
     width: 40px;
     cursor: pointer;
     display: none;
 }
 
-nav{
+nav {
     flex: 1;
     text-align: right;
     margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     margin-top: 20px;
     display: inline;
     margin-left: 40px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 20px;
     font-family: Vensfolk;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: orange;
 }
 
-.active{
+.active {
     color: orange;
 }
 
 
-h3{
+h3 {
     font-size: 28px;
     color: whitesmoke;
     font-family: Clicker;
@@ -124,7 +127,7 @@ h3{
 
 
 
-.col-3 img{
+.col-3 img {
     max-width: 400px;
 }
 
@@ -132,29 +135,29 @@ h3{
 /* CARD */
 
 
-  
-  .card {
+
+.card {
     margin: 100px auto 0;
     width: 90%;
     height: 450px;
     perspective: 1000px;
-  }
-  
-  .card__inner {
+}
+
+.card__inner {
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-  }
-  
-  .card__inner.is-flipped {
+}
+
+.card__inner.is-flipped {
     transform: rotateY(180deg);
-  }
-  
-  
-  .card__face {
+}
+
+
+.card__face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -163,95 +166,95 @@ h3{
     overflow: hidden;
     border-radius: 16px;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-  }
+}
 
 
-  .card__content_phone{
-      display: none;
-  }
-  
-  .card__face--front {
+.card__content_phone {
+    display: none;
+}
+
+.card__face--front {
     background-image: linear-gradient(to bottom right, var(--primary), var(--light));
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .card__face--front h2 {
+}
+
+.card__face--front h2 {
     color: #FFF;
     font-size: 60px;
     text-align: center;
-  }
-  
-  .card__face--back {
+}
+
+.card__face--back {
     background-color: var(--light);
     transform: rotateY(180deg);
-  }
-  
-  .card__content {
+}
+
+.card__content {
     width: 100%;
     height: 100%;
-  }
-    
-  .pp {
+}
+
+.pp {
     display: block;
     width: 128px;
     height: 128px;
     margin: 0 auto -20px;
     object-fit: cover;
-  }
-  
-  .card__header h2 {
+}
+
+.card__header h2 {
     color: #FFF;
     font-size: 32px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
-  }
-  
-  .card__body {
+}
+
+.card__body {
     padding: 30px;
     text-align: center;
-  }
-  
-  .card__body h3 {
+}
+
+.card__body h3 {
     color: var(--dark);
     font-size: 29px;
     margin-top: 10px;
-  }
-  
-  .card__body p {
+}
+
+.card__body p {
     color: var(--dark);
     font-size: 18px;
     line-height: 1.4;
-  }
+}
 
 
 
 
 
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 100px 0;
 }
 
-.col-1{
+.col-1 {
     flex-basis: 50%;
     position: relative;
     /* margin-left: 50px; */
 }
 
-.col-1 h2{
+.col-1 h2 {
     font-size: 54px;
     font-family: Clicker;
     color: whitesmoke;
 }
 
-.col-1 h3{
+.col-1 h3 {
     font-size: 30px;
     font-family: Clicker;
     color: whitesmoke;
@@ -259,7 +262,7 @@ h3{
     margin: 20px 0 10px;
 }
 
-.col-1 p{
+.col-1 p {
     font-size: 18px;
     font-family: Nunito;
     margin: 30px 0;
@@ -267,44 +270,95 @@ h3{
     line-height: 160%;
 }
 
-.col-2{
+.col-2 {
     position: relative;
     flex-basis: 40%;
     display: flex;
     align-items: center;
 }
 
-.col-2 .coppia{
+.col-2 .coppia {
     width: 70%;
     border-radius: 10px;
 }
 
-.footer p{
-    font-size: 12px;
-    margin-top: 5px;
-    font-family: vensfolk;
-    color: whitesmoke;
+
+footer{
+    background-color: #141938;
+    border-top: thin solid #C78300;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #F0DFBE;
 }
 
-
-.footer .copy{
-    width: 10px;
-}
-
-.footer .firma{
+.footer-content{
     display: flex;
-column-gap: 0px;
-align-items: baseline;
-margin-bottom: 20px;
-}
-
-.firma p{
-    font-size: 8px;
-
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 
-.col-3{
+
+
+
+.footer-bottom{
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color: #C78300;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ 
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+
+ .footer-menu{
+    float: right;
+  }
+  
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+    font-family: Vensfolk;
+  }
+  
+  .footer-menu ul li a:hover{
+    color: #C78300;
+  }
+
+
+
+
+.col-3 {
     position: relative;
     flex-basis: 40%;
     display: flex;
@@ -314,13 +368,13 @@ margin-bottom: 20px;
 
 
 
-h2{
+h2 {
     font-size: 54px;
     font-family: Clicker;
     color: whitesmoke;
 }
 
-p{
+p {
     font-size: 18px;
     font-family: Nunito;
     color: whitesmoke;
@@ -328,319 +382,66 @@ p{
 }
 
 
-.description{
-    background-color: #C78300;
+.description {
+    background-color: #F0DFBE;
     border-radius: 20px;
     padding: 40px;
 }
 
 
-.gallery{
+.description p {
+    color: #141938;
+}
+
+.description h2 {
+    color: #141938;
+}
+
+.gallery {
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     column-gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
-.gallery img{
+.gallery img {
     width: 100%;
     height: auto;
-flex-basis: 30%;
+    flex-basis: 30%;
 }
 
 
 
-.contattaci{
+.contattaci {
     display: flex;
-justify-content: space-between;
-margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 
-  
+
 
 /* FOOD FORM WEB DESKTOP */
 
 
 
- 
-        /* Styling the Form (Color, Padding, Shadow) */
-        form {
-            background-color: rgba(255, 198, 87, 0.5);
-max-width: 700px;
-margin: 50px auto;
-padding: 40px 70px;
-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-border-radius: 31px;
-        }
- 
-        /* Styling form-control Class */
-        .form-control {
-            text-align: left;
-            margin-bottom: 25px;
-        }
- 
-        /* Styling form-control Label */
-        .form-control label {
-            display: block;
-            margin-bottom: 10px;
-            color: white;
-            font-family: Nunito;
-            font-weight: 100;
-            font-size: 20px;
-        }
- 
-        /* Styling form-control input,
-        select, textarea */
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid #777;
-border-radius: 2px;
-font-family: Nunito;
-padding: 10px;
-display: block;
-width: 95%;
-height: 40px;
-border-radius: 10px;
-        }
- 
-        /* Styling form-control Radio
-        button and Checkbox */
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
- 
-        /* Styling Button */
-        button {
-            background-color: #1D244E;
-           border: none;
-            border-radius: 5px;
-            font-family: Nunito;
-            font-size: 18px;
-            display: block;
-            width: auto;
-            padding: 10px 30px 10px 30px;
-            color: whitesmoke;
-            cursor: pointer;
-            margin-top: 30px;
-        }
 
-button:hover{
-    color: #1D244E;
-    background: #FEEAD3;
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+    background-color: rgba(255, 198, 87, 0.5);
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px 70px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 31px;
 }
 
-
-
-        .submitBox{
-            display: flex;
-            justify-content: center;
-        }
-
-        .alert{
-            width: 100%;
-            background: green;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 100;
-            display: none;
-            font-family: Nunito;
-            color: white
-            ;
-        }
-
-
-
-.cta{
-    background-color: #C78300;
-    width: auto;
-    padding: 10px 30px 10px 30px;
-border: none;
-display: flex;
-justify-content: center;
-letter-spacing: 0.1em;
-
-}
-
-
-.cta:hover{
-    background: #FEEAD3;
-    color: #C78300;
-}
-
-
-.cta a:hover{
-    background: #FEEAD3;
-color: #C78300;
-}
-
-
-
-.cta a{
-    text-decoration: none;
-    color: #F0DFBE;
-}
-/*
-.card__content_phone{
-    display: none;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:700px){
-
-    nav ul{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        z-index: 2;
-        background-color: #f0dfbe;
-        
-        
-    }
-
-    nav ul li{
-        display: block;
-        margin-top: 7px;
-        
-    }
-
-    nav ul li a{
-        color: #353C63;
-    }
-
-    .menu-icon{
-        display: block;
-    }
-
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-
-    .row{
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-
-    .col-2{
-        flex-basis: 100%;
-        margin-bottom: 20px;
-        display: none ;
-    }
-
-    .col-2 .coppia{
-        width: 50%;
-    }
-
-.col-3 {
-    width: 50%;
-align-items: center;
-}
-
-
-
-.col-1{
-    flex-basis: 50%;
-}
-
-.col-1 h2{
-    font-size: 30px;
-
-}
-
-.col-1 h3{
-    font-size: 20px;
-}
-
-.col-1 p{
-    font-size: 16px;
-}
-
-.logo{
-    width: 60px;
-}
-
-.footer{
-    margin-bottom: 10px;
-    overflow: hidden;
-    font-size: 5px;
-}
-
-
-/* FOOD FORM MOBILE */
-
-
-.description h2{
-    font-size: 30px;
-}
-
-.description p{
-    font-size: 12px;
-}
-
-.col-3 img{
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-.card__body h3{
-font-size: 21px;
-
-}
-
-.card__body p{
-font-size: 13px;
-}
-
-.gallery img{
-    flex-basis: 46%;
-    display: flex;
-    column-gap: 0px;
-}
-
-
-
+/* Styling form-control Class */
 .form-control {
     text-align: left;
+    margin-bottom: 25px;
 }
 
 /* Styling form-control Label */
@@ -650,76 +451,356 @@ font-size: 13px;
     color: white;
     font-family: Nunito;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+/* Styling form-control input,
+        select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: Nunito;
+    padding: 10px;
+    display: block;
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+/* Styling form-control Radio
+        button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+/* Styling Button */
+button {
+    background-color: #1D244E;
+    border: none;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-size: 18px;
+    display: block;
+    width: auto;
+    padding: 10px 30px 10px 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    color: #1D244E;
+    background: #FEEAD3;
 }
 
 
 
-.col-1 h2{
-    font-size: 30px;
-    font-family: Clicker;
-    color: whitesmoke;
+.submitBox {
+    display: flex;
+    justify-content: center;
+}
+
+.alert {
+    width: 100%;
+    background: green;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    display: none;
+    font-family: Nunito;
+    color: white;
+}
+
+
+
+.cta {
+    background-color: #C78300;
+    width: auto;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.1em;
+
+}
+
+
+.cta:hover {
+    background: #FEEAD3;
+    color: #C78300;
+}
+
+
+.cta a:hover {
+    background: #FEEAD3;
+    color: #C78300;
+}
+
+
+
+.cta a {
+    text-decoration: none;
+    color: #F0DFBE;
+}
+
+/*
+.card__content_phone{
+    display: none;
+}
+*/
+
+
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.iban h3 {
+    font-family: Vensfolk;
+    color: #141938;
+}
+
+.iban p {
+    color: #141938;
     margin-top: 10px;
 }
 
-.col-1 h3{
-    font-size: 20px;
-    font-family: Clicker;
-    color: whitesmoke;
-    font-weight: 100;
-    margin: 5px auto;
-}
-
-.col-1 p{
-    font-size: 13px;
-    font-family: Nunito;
-    margin: 15px auto;
-    color: whitesmoke;
-    line-height: 160%;
-}
-
-.card__content_phone{
-    display: block;
-    background-color: var(--light);
-    border-radius: 8px;
-}
-
-.card{
-    display: none;
-}
-
-
-#menuList{
-    padding-right: 10px;
-
-}
-
-
-
-
-.contattaci{
-margin-top: 20px;
-display: flex;
-flex-direction: column;
-}
-
-.cla{
+.iban {
     margin-top: 20px;
+    background-color: #F0DFBE;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px) {
+
+    nav ul {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 2;
+        background-color: #f0dfbe;
+
+
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 7px;
+
+    }
+
+    nav ul li a {
+        color: #353C63;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    .col-2 .coppia {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 50%;
+        align-items: center;
+    }
+
+
+
+    .col-1 {
+        flex-basis: 50%;
+    }
+
+    .col-1 h2 {
+        font-size: 30px;
+
+    }
+
+    .col-1 h3 {
+        font-size: 20px;
+    }
+
+    .col-1 p {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .footer {
+        margin-bottom: 10px;
+        overflow: hidden;
+        font-size: 5px;
+    }
+
+
+    /* FOOD FORM MOBILE */
+
+
+    .description h2 {
+        font-size: 30px;
+    }
+
+    .description p {
+        font-size: 12px;
+    }
+
+    .col-3 img {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .card__body h3 {
+        font-size: 21px;
+
+    }
+
+    .card__body p {
+        font-size: 13px;
+    }
+
+    .gallery img {
+        flex-basis: 100%;
+        display: flex;
+        column-gap: 0px;
+    }
+
+
+
+    .form-control {
+        text-align: left;
+    }
+
+    /* Styling form-control Label */
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+        font-family: Nunito;
+        font-weight: 100;
+        font-size: 16px;
+    }
+
+
+
+    .col-1 h2 {
+        font-size: 30px;
+        font-family: Clicker;
+        color: whitesmoke;
+        margin-top: 10px;
+    }
+
+    .col-1 h3 {
+        font-size: 20px;
+        font-family: Clicker;
+        color: whitesmoke;
+        font-weight: 100;
+        margin: 5px auto;
+    }
+
+    .col-1 p {
+        font-size: 13px;
+        font-family: Nunito;
+        margin: 15px auto;
+        color: whitesmoke;
+        line-height: 160%;
+    }
+
+    .card__content_phone {
+        display: block;
+        background-color: var(--light);
+        border-radius: 8px;
+    }
+
+    .card {
+        display: none;
+    }
+
+
+    #menuList {
+        padding-right: 10px;
+
+    }
+
+
+
+
+    .contattaci {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cla {
+        margin-top: 20px;
+    }
+
+
+    .footer-menu ul{
+        display: none;
+      }
+
+
+      .footer-bottom p{
+          font-size: 10px;
+      }
+
+.footer-bottom a{
+    font-size: 10px !important; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
