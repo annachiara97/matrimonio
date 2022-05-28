@@ -675,7 +675,7 @@ button:hover {
     }
 
     .col-1 p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .logo {
@@ -697,7 +697,7 @@ button:hover {
     }
 
     .description p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .col-3 img {
@@ -711,7 +711,7 @@ button:hover {
     }
 
     .card__body p {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .gallery img {
@@ -734,7 +734,7 @@ button:hover {
         color: white;
         font-family: Nunito;
         font-weight: 100;
-        font-size: 16px;
+        font-size: 18px;
     }
 
 
@@ -755,7 +755,7 @@ button:hover {
     }
 
     .col-1 p {
-        font-size: 13px;
+        font-size: 18px;
         font-family: Nunito;
         margin: 15px auto;
         color: whitesmoke;
