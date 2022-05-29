@@ -105,7 +105,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #FEEAD3;
     font-size: 20px;
     font-family: Vensfolk;
 }
@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 h3 {
     font-size: 28px;
-    color: whitesmoke;
+    color: #FEEAD3;
     font-family: Clicker;
 }
 
@@ -169,6 +169,107 @@ h3 {
 }
 
 
+.star {
+    position: fixed;
+    border-radius: 50%;
+    animation-name: twinkle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    }
+  
+  .star1 {
+    margin-top: -19%; 
+    margin-left: 60%;
+    }
+  
+  .star2 {
+     margin-top: 6%; 
+     margin-left: 44%;
+     }
+  
+  .star3 {
+     margin-top: -29%; 
+     margin-left: 11%;
+     }
+  
+  .star4 {
+     margin-top: 6%; 
+     margin-left: -40%;
+     }
+  
+  .star5 {
+     margin-top: -24%; 
+     margin-left: -30%;
+     }
+  
+  .star6 {
+     margin-top: -20%; 
+     margin-left: -73%;
+     }
+  
+  .star7 {
+     margin-top: 24%; 
+     margin-left: -73%;
+     }
+  
+  .star8 {
+     margin-top: 35%; 
+     margin-left: 35%;
+     }
+  
+  .star9 {
+     margin-top: 25%; 
+     margin-left: 78%;
+     }
+  
+
+     @keyframes twinkle {
+        20% {
+           transform: scale(0.5);
+           opacity: 0.5;
+           }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card__content_phone {
     display: none;
 }
@@ -209,7 +310,7 @@ h3 {
 }
 
 .card__header h2 {
-    color: #FFF;
+    color: #FEEAD3;
     font-size: 32px;
     font-weight: 900;
     text-transform: uppercase;
@@ -254,13 +355,13 @@ h3 {
 .col-1 h2 {
     font-size: 54px;
     font-family: Clicker;
-    color: whitesmoke;
+    color: #FEEAD3;
 }
 
 .col-1 h3 {
     font-size: 30px;
     font-family: Clicker;
-    color: whitesmoke;
+    color: #FEEAD3;
     font-weight: 100;
     margin: 20px 0 10px;
 }
@@ -269,7 +370,7 @@ h3 {
     font-size: 18px;
     font-family: Nunito;
     margin: 30px 0;
-    color: whitesmoke;
+    color: #FEEAD3;
     line-height: 160%;
 }
 
@@ -374,13 +475,13 @@ footer{
 h2 {
     font-size: 54px;
     font-family: Clicker;
-    color: whitesmoke;
+    color: #FEEAD3;
 }
 
 p {
     font-size: 18px;
     font-family: Nunito;
-    color: whitesmoke;
+    color: #FEEAD3;
     font-weight: 100;
 }
 
@@ -452,7 +553,7 @@ form {
 .form-control label {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: #FEEAD3;
     font-family: Nunito;
     font-weight: 100;
     font-size: 20px;
@@ -491,7 +592,7 @@ button {
     display: block;
     width: auto;
     padding: 10px 30px 10px 30px;
-    color: whitesmoke;
+    color: #FEEAD3;
     cursor: pointer;
     margin-top: 30px;
 }
@@ -518,7 +619,7 @@ button:hover {
     font-weight: 100;
     display: none;
     font-family: Nunito;
-    color: white;
+    color: #FEEAD3;
 }
 
 
@@ -795,7 +896,7 @@ button:hover {
     }
 
     .contattaci h2{
-        font-size: 23px;
+        font-size: 28px;
     }
 
     .footer-menu ul{
