@@ -758,7 +758,10 @@ button:hover {
         margin: 50px 0;
     }
 
-
+.pp{
+    height: 100%;
+    width: 80px;
+}
 
 
 
