@@ -747,10 +747,20 @@ button:hover {
         transition: 0.5s;
     }
 
+
+ .geo{
+        flex-direction: column !important;
+        margin-top: 20px !important;
+    }
+
     .row {
         flex-direction: column-reverse;
         margin: 50px 0;
     }
+
+
+
+
 
     .col-2 {
         flex-basis: 100%;
@@ -841,7 +851,7 @@ button:hover {
     .form-control label {
         display: block;
         margin-bottom: 10px;
-        color: white;
+        color: #F0DFBE;
         font-family: Nunito;
         font-weight: 100;
         font-size: 18px;
@@ -850,25 +860,29 @@ button:hover {
 
 
     .col-1 h2 {
-        font-size: 30px;
+        font-size: 25px;
         font-family: Clicker;
-        color: whitesmoke;
+        color: #F0DFBE;
         margin-top: 10px;
     }
 
     .col-1 h3 {
-        font-size: 25px;
+        font-size: 29px;
         font-family: Clicker;
-        color: whitesmoke;
+        color: #F0DFBE;
         font-weight: 100;
         margin: 5px auto;
+    }
+
+    .col-1 img{
+        width: 25px !important;
     }
 
     .col-1 p {
         font-size: 18px;
         font-family: Nunito;
         margin: 15px auto;
-        color: whitesmoke;
+        color: #F0DFBE;
         line-height: 160%;
     }
 
