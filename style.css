@@ -917,6 +917,7 @@ button:hover {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     .cla {
