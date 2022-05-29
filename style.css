@@ -693,7 +693,11 @@ button:hover {
 
 
 
-
+.contatto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 
@@ -794,6 +798,8 @@ button:hover {
 
 
     /* FOOD FORM MOBILE */
+
+
 
 
     .description h2 {
