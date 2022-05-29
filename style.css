@@ -861,8 +861,12 @@ button:hover {
         font-size: 18px;
     }
 
-
-
+ .h4{ 
+    font-size: 30px !important;
+    font-family: Clicker;
+    color: #F0DFBE;
+    margin-top: 10px;
+ }
     .col-1 h2 {
         font-size: 20px;
         font-family: Clicker;
