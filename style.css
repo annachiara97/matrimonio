@@ -174,7 +174,7 @@ h3 {
 }
 
 .card__face--front {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--light));
+    background-color: #353C63 ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,9 +182,12 @@ h3 {
 }
 
 .card__face--front h2 {
-    color: #FFF;
+    color: #FEEAD3;
     font-size: 60px;
+    font-weight: lighter;
     text-align: center;
+    letter-spacing: 0.02em;
+
 }
 
 .card__face--back {
@@ -706,7 +709,7 @@ button:hover {
     }
 
     .card__body h3 {
-        font-size: 21px;
+        font-size: 27px;
 
     }
 
@@ -747,7 +750,7 @@ button:hover {
     }
 
     .col-1 h3 {
-        font-size: 20px;
+        font-size: 25px;
         font-family: Clicker;
         color: whitesmoke;
         font-weight: 100;
@@ -791,6 +794,9 @@ button:hover {
         margin-top: 20px;
     }
 
+    .contattaci h2{
+        font-size: 23px;
+    }
 
     .footer-menu ul{
         display: none;
